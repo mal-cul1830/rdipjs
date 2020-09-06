@@ -1,0 +1,17 @@
+.title{
+    text-align:center;
+    background: black;
+    color: white;
+    width: 100%;
+}
+.row{
+    text-align:center;
+}
+.col{
+    width: 80%;
+    text-align: center;
+}
+form{
+    display: block;
+    text-align: center;
+}
