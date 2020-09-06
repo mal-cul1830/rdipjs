@@ -1,0 +1,16 @@
+.palindrome{
+    background-color: rgb(255, 94, 0);
+    width: 50%;
+    padding: 5rem 5rem;
+    height: 50rem;
+}
+.anagram{
+    background-color: rgb(255, 208, 0);
+    width: 50%;
+    padding: 5rem 5rem;
+    height: 50rem;
+}
+.col-sm-6{
+    text-align:center;
+    height: 30rem;
+}

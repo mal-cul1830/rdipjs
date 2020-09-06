@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form-Validation</title>
+        <script src = input.js></script>
+        <link rel = 'stylesheet' type = 'text/css' href = 'task2.css' />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .title{
+                text-align:center;
+                background: black;
+                color: white;
+                width: 100%;
+            }
+            .row{
+                text-align:center;
+            }
+            .col{
+                width: 80%;
+                text-align: center;
+            }
+            form{
+                display: block;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = 'container'>
+            <div class = 'row'>
+                <div class = 'col'>
+                    <div class = 'title'>
+                        <h1>FORM</h1>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class = 'container'>
+            <div class = 'row'>
+                <div class = 'col'>
+                    <form target="_blank" onsubmit = "return validate_form()">
+                        <label for = 'name'>Name:</label>
+                        <input type = 'text' name = 'name' id = 'name' required/><br><br>
+                        <label for = 'phno'>Phone:</label>
+                        <input type = 'text' name = 'phno' id = 'phno'required/><br><br>
+                        <label for = 'email'>Email:</label>
+                        <input type = 'text' name = 'email' id = 'email' required/><br><br>
+                        <input type = 'submit' name = 'submit' id = 'submit' value = 'submit'/>
+                    </form>
+                </div>
+            </div>   
+        </div>
+    </body>
+</html>

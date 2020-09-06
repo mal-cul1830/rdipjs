@@ -1,0 +1,14 @@
+.row{
+    background-color: rgb(255, 180, 180);
+    padding: 4rem 4rem;
+}
+.col-sm-4{
+    text-align:center;
+}
+input[type = 'button']{
+    border:none;
+    color:white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 0.1rem;
+}

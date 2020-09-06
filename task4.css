@@ -1,0 +1,27 @@
+.row h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+input[type="button"] 
+{ 
+    background-color:rgb(0, 0, 0); 
+    color: white; 
+    border: none;
+    height: 4rem;
+}
+.col-sm-6{
+    text-align: center;
+}
+.object1, .object2{
+    background-color: pink;
+    padding: 3rem 3rem;
+    text-align: center;
+}
+.final-title{
+    text-align:center;
+    width: 100%;
+}
+.results{
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anagram/Palindrome Detector</title>
+        <script src = 'input.js'></script>
+        <script>
+            function pui(){
+                if(checkIfPalindrome())
+                    document.getElementById('palindrome-result').innerHTML = 'THE WORD IS A PALINDROME';
+                else
+                    document.getElementById('palindrome-result').innerHTML = 'THE WORD IS NOT A PALINDROME';
+            }
+            function aui(){
+                console.log(checkIfAnagram())
+                if(checkIfAnagram())
+                    document.getElementById('anagram-result').innerHTML = 'THE WORD IS AN ANAGRAM OF THE STRING';
+                else
+                    document.getElementById('anagram-result').innerHTML = 'THE WORD IS NOT AN ANAGRAM OF THE STRING';
+            }
+        </script>
+        <link rel = 'stylesheet' type = 'text/css' href = 'task3.css' />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class = 'container'>
+            <div class="row">
+                <h1>
+                    Anagram/Palindrome Checker
+                </h1>
+                <h5>
+                    Check if your word(s) is a palindrome/anagram!
+                </h5>
+            </div>
+            <div class="row">
+                <br>
+                <hr>
+                <div class="col-sm-6">
+                    <div class = 'palindrome'>
+                        <p id = 'palindrome-title'>PALINDROME CHECKER</p>
+                        <br><hr>
+                        <p id = 'pword'>Enter Word:</p>
+                        <input type = 'text' id = 'pword1'><br><hr>
+                        <input type = 'button' value = 'Check' onclick = "pui()"/>
+                        <p id = 'palindrome-result'></p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class = 'anagram'>
+                        <p id = 'anagram-title'>ANAGRAM CHECKER</p>
+                        <br><hr>
+                        <p id = 'astring-title'>Enter String:</p>
+                        <input type = 'text' id = 'astring'>
+                        <br><hr>
+                        <p id = 'aword-title'>Enter Word:</p>
+                        <input type = 'text' name = 'aword'id = 'aword'/><br>
+                        <br><hr>
+                        <input type = 'button' value = 'Check' onclick = "aui()"/>
+                        <p id = 'anagram-result'></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

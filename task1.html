@@ -1,0 +1,44 @@
+<html> 
+   <head> 
+      <title>Calculator</title>
+      <script src = 'input.js'> </script> 
+      <link rel = 'stylesheet' type = 'text/css' href = 'task1.css' />
+   </head> 
+   <body> 
+      <div class = 'title' >Calculator</div> 
+      <table border="5"> 
+         <tr> 
+            <td colspan="3"><input type="text" id="answer" onclick="get_direct()"/></td>
+            <td><input type="button" id = "clear-button" value="clear" onclick="clear_input()"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="1" onclick="concat_to_input('1')"/> </td> 
+            <td><input type="button" value="2" onclick="concat_to_input('2')"/> </td> 
+            <td><input type="button" value="3" onclick="concat_to_input('3')"/> </td> 
+            <td><input type="button" value="/" onclick="concat_to_input('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="concat_to_input('4')"/> </td> 
+            <td><input type="button" value="5" onclick="concat_to_input('5')"/> </td> 
+            <td><input type="button" value="6" onclick="concat_to_input('6')"/> </td> 
+            <td><input type="button" value="-" onclick="concat_to_input('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7" onclick="concat_to_input('7')"/> </td> 
+            <td><input type="button" value="8" onclick="concat_to_input('8')"/> </td> 
+            <td><input type="button" value="9" onclick="concat_to_input('9')"/> </td> 
+            <td><input type="button" value="+" onclick="concat_to_input('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="*" onclick="concat_to_input('*')"/> </td> 
+            <td><input type="button" value="0" onclick="concat_to_input('0')"/> </td> 
+            <td><input type="button" value="%" onclick="concat_to_input('%')"/> </td> 
+            <td><input type="button" value="ABS" onclick="apply_on_input('SQRT')"/> </td>
+         </tr>
+         <tr> 
+            <td><input type="button" value="SQRT" onclick="sqrt()"/> </td> 
+            <td colspan = "3"><input type="button" value="=" onclick="find_answer()"/> </td> 
+         </tr>
+      </table> 
+   </body> 
+</html>
